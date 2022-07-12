@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Node.js News</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo">Node.js logo</div>
+      <div class="header__search">Search</div>
+    </header>
+    <div class="wrapper">
+      <div class="news">
+        <% articles.forEach(element => {%>
+        <a href="#" class="news__card">
+          <h2><%- element.title%></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+            facere. Ab tempore incidunt magnam nesciunt velit omnis, reiciendis
+            facilis minima nihil, non dolorem amet voluptates, placeat aperiam
+            officiis mollitia sint.
+          </p>
+        </a>
+        <% }); %>
+      </div>
+    </div>
+  </body>
+</html>
