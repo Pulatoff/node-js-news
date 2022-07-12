@@ -41,3 +41,22 @@ h2 {
 .news__card:hover {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.233);
 }
+
+.news-single {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  max-width: 1300px;
+}
+
+.search {
+  padding: 6px;
+  border: none;
+}
+
+.submit {
+  cursor: pointer;
+  float: right;
+  padding: 6px 10px;
+  border: none;
+}

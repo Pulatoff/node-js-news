@@ -18,17 +18,11 @@
     <header class="header">
       <div class="header__logo">Node.js logo</div>
       <%- include('./partials/search.ejs')%>
-      </div>
     </header>
     <div class="wrapper">
-      <div class="news">
-        <% articles.forEach(element => {%>
-        <a href="/article/<%- element.id%>" class="news__card">
-          <img src="<%- element.thumbnail_url%>" alt="" />
-          <h2><%- element.title.rendered%></h2>
-          <p><%- element.excerpt.rendered%></p>
-        </a>
-        <% }); %>
+      <div class="news-single">
+        <h2><%- article.title.rendered%></h2>
+        <p><%- article.content.rendered%></p>
       </div>
     </div>
   </body>
